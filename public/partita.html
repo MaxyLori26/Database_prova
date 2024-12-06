@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserisci Punteggio Partita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inserisci il punteggio della partita</h1>
+    <div class="form-container">
+        <label>Numero Partita:</label>
+        <input type="number" id="matchNumber">
+        
+        <label>Data Partita:</label>
+        <input type="date" id="matchDate">
+
+        <h3>Punteggio Prima Squadra:</h3>
+        <input type="number" id="team1Score">
+        <label>Punti Penalità:</label>
+        <input type="number" id="team1Penalty">
+
+        <h3>Punteggio Seconda Squadra:</h3>
+        <input type="number" id="team2Score">
+        <label>Punti Penalità:</label>
+        <input type="number" id="team2Penalty">
+
+        <button onclick="calculateWinner()">Calcola Vincitore</button>
+        <p id="winnerMessage"></p>
+        <button onclick="viewHistory()">Visualizza Storico Partite</button>
+    </div>
+    
+    <button id="backButton" onclick="window.history.back()">Torna Indietro</button>
+
+    <button onclick="saveMatchToDatabase()">Salva Partita</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

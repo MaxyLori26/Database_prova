@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserisci Squadre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inserisci il nome delle squadre</h1>
+    <div class="form-container">
+        <label>Nome Prima Squadra:</label>
+        <input type="text" id="team1Name" onchange="showPlayersField('team1')">
+        <div id="team1Players" class="players-field"></div>
+
+        <label>Nome Seconda Squadra:</label>
+        <input type="text" id="team2Name" onchange="showPlayersField('team2')">
+        <div id="team2Players" class="players-field"></div>
+
+        <button onclick="saveTeams()">Salva e Procedi</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
