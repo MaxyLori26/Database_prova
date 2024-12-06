@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFE8A1; /* Sfondo giallo caldo */
+    color: #333;
+}
+
+.intro {
+    background-color: #FFCC80; /* Arancione tenue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.centered {
+    text-align: center;
+    color: #8B4513; /* Marrone scuro */
+}
+
+.subtitle {
+    color: #FF7043; /* Arancio bruciato */
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.form-container {
+    margin: 20px;
+    background-color: #FFE8A1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input, button {
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid #FF7043;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #FF7043;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF5722;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFF3E0; /* Avorio caldo */
+}
+
+th, td {
+    border: 1px solid #FF7043;
+    padding: 10px;
+    text-align: center;
+}
+
+#backButton {
+    margin-top: 20px;
+    background-color: #FF7043;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#backButton:hover {
+    background-color: #FF5722;
+}
